@@ -26,6 +26,10 @@ print `Body`
 ```php
 Semej::message();
 ```
+delete `session`
+```php
+Semej::unset();
+```
 ### print complete alert
 this method require to `bootstrap CDN` included!
 with this method you can show the full alert message in your document.
