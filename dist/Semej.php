@@ -1,10 +1,19 @@
 <?php declare(strict_types=1); // strict requirement
 class Semej {
+    // declare domain name
+    private static $domain = 'localhost';
+
     // function to check session start or not
     public static function checkSession() {
         try {
             if (session_id() == '') {
-                session_start();
+                if(!isset($_SESSION)){  
+                    session_set_cookie_params(0, '/', self::$domain, true, true);
+                    ini_set( 'session.cookie_httponly', '1' );
+                    @session_regenerate_id(true);  
+                    ob_start();  
+                    session_start();
+                }  
             }
         }catch(Exception $e){
             echo "Error in checkSession() --> ".(string)$e;
@@ -99,6 +108,21 @@ class Semej {
             
         }catch(Exception $e){
             echo "Error in show() --> ".(string)$e;
+        }
+    }
+
+    // function to alert the message using sweetalert js
+    public static function alert() {
+        try {
+            self::checkSession();
+            if (isset($_SESSION['semej_lib_alerts_message']) && isset($_SESSION['semej_lib_alerts_title']) && isset($_SESSION['semej_lib_alerts_status'])) {
+                $semej_alert_box = "<script>Swal.fire('".$_SESSION['semej_lib_alerts_message']."')</script>";
+                echo $semej_alert_box;
+            }
+                self::unset();
+            
+        }catch(Exception $e){
+            echo "Error in alert() --> ".(string)$e;
         }
     }
 }

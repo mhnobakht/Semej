@@ -36,5 +36,16 @@ with this method you can show the full alert message in your document.
 in the method, valid `status` value is on of These: 
 `info` `primary` `danger` `dark` `warning` `success` `secondary` `light`
 ```php
-Semej::show('danger', 'error', 'file not found!');
+// set message like this
+Semej::set('danger', 'error', 'file not found!');
+
+// and show message like this
+Semej::show();
+```
+
+### alert message using sweet alert
+this method require to `sweetalert js cdn` included!
+with thie method you can alert the body of message in your document.
+```
+Semej::alert();
 ```
