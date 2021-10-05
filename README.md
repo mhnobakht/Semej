@@ -46,6 +46,6 @@ Semej::show();
 ### alert message using sweet alert
 this method require to `sweetalert js cdn` included!
 with thie method you can alert the body of message in your document.
-```
+```php
 Semej::alert();
 ```
