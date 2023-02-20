@@ -1,0 +1,19 @@
+{
+    "name": "academy01/semej",
+    "description": "Create alert message using sessions",
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Academy01\\Semej\\": "dist/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MHNobakht",
+            "email": "01programmingacademy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
