@@ -1,4 +1,7 @@
 <?php declare(strict_types=1); // strict requirement
+
+namespace Academy01\Semej;
+
 class Semej {
     // declare domain name
     private static $domain = 'localhost';
