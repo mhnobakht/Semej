@@ -3,11 +3,20 @@
 show alert messages using easily using `Semej`
 
 ## Installation
+Install package using composer:
+```php
+composer require academy01/semej
+```
+then add autoload
+```php
+require 'vendor/autoload.php';
+```
 
-just include `Semej.php` file in to your document and Enjoy!
+OR, just include `Semej.php` file in to your document and Enjoy!
 ```php
 include_once "dist/Semej.php";
 ```
+
 
 ## Usage
 Set arguments (`Status`, `Title`, `Body`)
