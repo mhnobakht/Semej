@@ -1,19 +1,21 @@
 {
     "name": "academy01/semej",
-    "description": "Create alert message using sessions",
-    "type": "library",
-    "license": "proprietary",
+    "description": "Simple package to show alert messages using session",
+    "require": {
+        "php": "^7.3",
+        "twbs/bootstrap": "dev-main"
+    },
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Academy01\\Semej\\": "dist/"
+            "Academy01\\Semej\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "MHNobakht",
-            "email": "01programmingacademy@gmail.com"
+            "name": "'academy01'",
+            "email": "80899303+mhnobakht@users.noreply.github.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "dev"
 }
