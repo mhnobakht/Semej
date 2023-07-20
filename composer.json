@@ -1,10 +1,7 @@
 {
     "name": "academy01/semej",
     "description": "Simple package to show alert messages using session",
-    "require": {
-        "php": "^7.3",
-        "twbs/bootstrap": "dev-main"
-    },
+    "require": {},
     "license": "MIT",
     "autoload": {
         "psr-4": {
